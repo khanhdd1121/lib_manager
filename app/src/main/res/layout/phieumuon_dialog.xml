@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_height="45dp"
+                android:src="@drawable/ic_phieumuon"
+                android:layout_width="45dp">
+            </ImageView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phếu Mượn"
+                android:textSize="30dp"
+                android:textStyle="bold|normal"
+                ></TextView>
+        </LinearLayout>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/tvMaphieuDialog">
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:layout_height="80dp">
+            <Spinner
+                android:id="@+id/spinnerThanhvien"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                />
+            <Spinner
+                android:id="@+id/spinnerSach"
+                android:layout_width="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/tvNgaythueDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="54dp"
+            android:hint="Chọn ngày"
+            />
+
+        <EditText
+            android:id="@+id/tvTienthueDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="54dp"
+            android:hint="Tiền thuê  "
+            />
+
+        <CheckBox
+            android:id="@+id/checkBoxPhieumuon"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Trạng Thái"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="60dp">
+            <Button
+                android:id="@+id/btnLuuMaP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="	#FF8C00"
+                android:drawableStart="@drawable/ic_luu"
+                android:text="Lưu"
+                />
+            <Button
+                android:id="@+id/btnhuyMaP"
+                android:layout_width="wrap_content"
+                android:backgroundTint="	#FF8C00"
+                android:layout_marginLeft="30dp"
+                android:drawableStart="@drawable/ic_xoa23"
+                android:layout_height="wrap_content"
+                android:text="Hủy"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
